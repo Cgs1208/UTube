@@ -33,3 +33,24 @@
 
 
  -->
+
+# debouncing for search bar
+
+- lets use cache to store the search results
+- time complexicity
+
+  - to search in array = O(n)
+  - to search in obj = O(1)
+
+  ["i","ip","iph","iphone"]
+
+  {
+  i:
+  ip:
+  iph:
+  iphone:
+  }
+
+- we can also use map() (new map()) which is more optimised
+
+- the search bar in the youtube header is using debouncing , live suggestion api , caching

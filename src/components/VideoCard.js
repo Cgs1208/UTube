@@ -17,7 +17,7 @@ function VideoCard({ info }) {
     <div className="p-2 m-2 w-72 shadow-lg rounded-lg">
       <img src={thumbnails.medium.url} alt="thumbnail" className="rounded-lg" />
       <ul>
-        <li className="font-bold py-2">{title}</li>
+        <li className="font-bold py-2">{title.slice(0, 50)}...</li>
         <li>{channelTitle}</li>
         <li>{formatNumberWithCommas(statistics.viewCount)} Views</li>
       </ul>

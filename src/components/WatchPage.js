@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { appActions } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
+import CommentsContainer from "./CommentsContainer";
 
 function WatchPage() {
   const [searchParams] = useSearchParams();
@@ -12,7 +13,7 @@ function WatchPage() {
   }, []);
 
   return (
-    <div className="p-5">
+    <div className="p-5 ">
       <iframe
         className="rounded-xl"
         width="880"
@@ -23,6 +24,7 @@ function WatchPage() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
+      <CommentsContainer />
     </div>
   );
 }
